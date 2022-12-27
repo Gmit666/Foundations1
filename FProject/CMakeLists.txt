@@ -20,4 +20,4 @@ add_executable(Assignment2
         sources/date.c
         sources/flight.c
         sources/functions.c
-        main.c cmake-build-debug/Passengers.c headers/Passengers.h)
+        main.c sources/Passengers.c)

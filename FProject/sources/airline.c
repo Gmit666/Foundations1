@@ -11,7 +11,11 @@ int initAirline(Airline* pAirline) {
         printf(ALLOCATE_ERR);
         return 0;
     }
-
+    printf("Enter num of passengers planes: ");
+    scanf( "%d",&pAirline->aircraft_fleet.passengers_planes);
+    printf( "Enter num of cargo planes: ");
+    scanf( "%d",&pAirline->aircraft_fleet.cargo_planes);
+    pAirline->aircraft_fleet.total=pAirline->aircraft_fleet.passengers_planes+pAirline->aircraft_fleet.cargo_planes;
     pAirline->num_of_flights = 0;
     pAirline->all_flights = (Flight**) malloc(sizeof(Flight*) * 10);
 
@@ -75,4 +79,26 @@ void printAllFlightsInLine(const AirportManager* pAirportManager, const Airline*
                 printFlight(pAirportManager, pAirline->all_flights[i]);
 
     }
+}
+int update_Fleet(const AirportManager* pAirportManager, Airline* pAirline) {
+    if(pAirline->aircraft_fleet.total < 1){
+        printf("The airline does not have enough planes in its fleet\n");
+        return 0;
+    }
+    int choose;
+    printf("Which plane:  1- Passenger plane    2-Cargo plane\n");
+    scanf("%d", &choose);
+    if (choose==1 && pAirline->aircraft_fleet.passengers_planes>0)
+    {
+        pAirline->aircraft_fleet.passengers_planes-1;
+        pAirline->aircraft_fleet.total-=1;
+    }
+    else if (choose==2 && pAirline->aircraft_fleet.cargo_planes>0)
+    {
+        pAirline->aircraft_fleet.cargo_planes-1;
+        pAirline->aircraft_fleet.total-=1;
+    }
+    else
+        printf("ERROR");
+    return 1;
 }
