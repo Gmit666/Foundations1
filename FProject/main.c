@@ -99,6 +99,7 @@ void run(AirportManager* airportManager, Airline* airline,struct plane *A) {
 
 int main() {
 
+    cout<<"hello";
     struct plane A = planeini();
 
     // init Airport Manager
