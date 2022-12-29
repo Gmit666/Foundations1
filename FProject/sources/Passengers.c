@@ -3,6 +3,10 @@
 //
 #include "Passengers.h"
 
+void profit(int num){
+    printf("profit from flight is %d",num*Price);
+}
+
 struct Passengers passini()
 {
     struct Passengers A;
@@ -47,7 +51,6 @@ void PrintPlane(struct plane *A)
         }
     }
 
-    printf("Occupied: %d\nMoney Earned: %d",A->Occupied,A->MoneyEarned);
 }
 
 void AddPassenger(struct plane *A)
@@ -81,6 +84,7 @@ void AddPassenger(struct plane *A)
             continue;
         }
     }
+    profit(num);
     A->Occupied+=num;
     A->MoneyEarned+=Price*num;
 }
