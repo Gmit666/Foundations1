@@ -6,6 +6,7 @@
 #include "headers/airport_manager.h"
 #include "headers/airline.h"
 #include "Passengers.h"
+#include <time.h>
 
 void freeAll(AirportManager* airportManager, Airline* airline) {
     freeAirportManager(airportManager);
@@ -96,6 +97,30 @@ void run(AirportManager* airportManager, Airline* airline,struct plane *A) {
     }
     printf(EXIT);
 }
+
+void print_random_weather() {
+    // Seed the random number generator with the current time
+    srand(time(0));
+
+    // Declare an array of possible weather conditions
+    char *conditions[] = {
+            "clear skies",
+            "partly cloudy",
+            "mostly cloudy",
+            "overcast",
+            "light rain",
+            "heavy rain",
+            "thunderstorms",
+            "snow"
+    };
+
+    // Generate a random index between 0 and the number of conditions - 1
+    int index = rand() % (sizeof(conditions) / sizeof(char*));
+
+    // Print the random weather condition
+    printf("Current weather for the flight: %s\n", conditions[index]);
+}
+
 
 int main() {
 
