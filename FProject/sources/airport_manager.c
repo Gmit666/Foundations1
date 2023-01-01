@@ -29,6 +29,21 @@ void freeAirportManager(AirportManager* pAirportManager) {
     free(pAirportManager->all_airports);
 }
 
+int checkCountry(char* name) {
+    char* fileName = "countries.txt";
+    FILE* fp = fopen(fileName, "r");
+    char* tmp;
+    while (!feof(fp)) {
+        if (strcmp(name, fscanf(fp, "%c", &tmp)) == 1) {
+            return 1;
+        }
+            
+    }
+    fclose(fileName);
+    return 0;
+}
+
+
 int addAirport(AirportManager* pAirportManager) {
     Airport newAirport;
 
