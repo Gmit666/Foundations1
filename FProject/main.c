@@ -87,7 +87,7 @@ void run(AirportManager* airportManager, Airline* airline,struct plane *A) {
                     }
                     default:
                     {
-                        printf("\nSayonara bitches.");
+                        printf("\nSayonara");
                         break;
                     }
                 }
