@@ -1,0 +1,19 @@
+# ninja log v5
+16	302	6926568265649236	CMakeFiles/Assignment2.dir/sources/flight.c.obj	c1bc5612c647a308
+13	312	6926568265735057	CMakeFiles/Assignment2.dir/sources/airport_manager.c.obj	f6ab6a0ff085d057
+10	294	6926568265649236	CMakeFiles/Assignment2.dir/sources/date.c.obj	a09ac2c17c4cac0c
+2	77	6926644700289397	CMakeFiles/Assignment2.dir/main.c.obj	b32855c0a38484f4
+0	311	6942857905804809	build.ninja	9af5f059d0431d4a
+7	317	6926568265863339	CMakeFiles/Assignment2.dir/sources/airport.c.obj	4bbcec6472cecd5a
+2	310	6926568265662519	CMakeFiles/Assignment2.dir/sources/airline.c.obj	1e8d6159976457b0
+19	322	6926568265932867	CMakeFiles/Assignment2.dir/sources/functions.c.obj	8075994ee64f854d
+68	142	6926647082863588	Assignment2.exe	deaa2499b8f80ad
+11	165	6942860015805252	CMakeFiles/Assignment2.dir/sources/date.c.obj	a56e091b567fe979
+16	169	6942860015853163	CMakeFiles/Assignment2.dir/sources/flight.c.obj	17e32f1aa46d5620
+8	173	6942860015853163	CMakeFiles/Assignment2.dir/sources/airport.c.obj	bfae3af3038516c3
+4	181	6942860015903706	CMakeFiles/Assignment2.dir/sources/airline.c.obj	1b9a7ba6d7cd9578
+19	185	6942860016026593	CMakeFiles/Assignment2.dir/sources/functions.c.obj	caa685511e234796
+13	189	6942860016016591	CMakeFiles/Assignment2.dir/sources/airport_manager.c.obj	d4561dab450db6b7
+169	250	6942860016705258	CMakeFiles/Assignment2.dir/sources/Passengers.c.obj	edc4613463ff8f45
+166	269	6942860016896222	CMakeFiles/Assignment2.dir/main.c.obj	f070d28df179f5fd
+269	449	6942860018633654	Assignment2.exe	f807be7c86f92ec1
